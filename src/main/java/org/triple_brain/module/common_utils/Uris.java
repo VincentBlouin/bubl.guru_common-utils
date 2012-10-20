@@ -1,10 +1,7 @@
 package org.triple_brain.module.common_utils;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
+import java.net.*;
 
 /*
 * Copyright Mozilla Public License 1.1
@@ -17,6 +14,14 @@ public class Uris {
             throw new RuntimeException(e);
         }
     }
+    public static String encodeURL(URI uri){
+        return encodeURL(uri.toString());
+    }
+
+    public static String encodeURL(URL url){
+        return encodeURL(url.toString());
+    }
+
     public static String decodeURL(String URL) throws UnsupportedEncodingException{
         try{
             return URLDecoder.decode(URL, "ISO-8859-1");
