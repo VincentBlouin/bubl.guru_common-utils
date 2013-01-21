@@ -12,7 +12,7 @@ import java.net.URLConnection;
 * Copyright Mozilla Public License 1.1
 */
 public class DataFetcher {
-    //test commit
+
     private static String getWebSiteSource(URL url) {
         String output="";
         try {
