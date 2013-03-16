@@ -23,12 +23,7 @@ public class Uris {
     }
 
     public static String decodeURL(String URL) throws UnsupportedEncodingException{
-        try{
-            return URLDecoder.decode(URL, "ISO-8859-1");
-        }catch(UnsupportedEncodingException e){
-            throw new RuntimeException(e);
-        }
-
+        return URLDecoder.decode(URL, "ISO-8859-1");
     }
     public static URI get(String uri){
         try{
