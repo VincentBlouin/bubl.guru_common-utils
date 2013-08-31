@@ -22,6 +22,9 @@ public class Misc {
 
     public static String[] setAsStringToArray(String setAsString){
         setAsString = removeFirstAndLastCharOfString(setAsString);
+        if(setAsString.isEmpty()){
+            return new String[]{};
+        }
         return setAsString.split(SET_AS_STRING_DELIMITER);
     }
     public static String removeFirstAndLastCharOfString(String string){
