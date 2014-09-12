@@ -1,11 +1,12 @@
+/*
+ * Copyright Vincent Blouin under the Mozilla Public License 1.1
+ */
+
 package org.triple_brain.module.common_utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.*;
 
-/*
-* Copyright Mozilla Public License 1.1
-*/
 public class Uris {
     public static String encodeURL(String URL){
         try{

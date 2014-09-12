@@ -1,3 +1,7 @@
+/*
+ * Copyright Vincent Blouin under the Mozilla Public License 1.1
+ */
+
 package org.triple_brain.module.common_utils;
 
 import org.codehaus.jettison.json.JSONArray;
@@ -6,9 +10,6 @@ import org.codehaus.jettison.json.JSONObject;
 
 import java.util.Iterator;
 
-/*
-* Copyright Mozilla Public License 1.1
-*/
 public class JsonUtils {
 
     public static JSONObject merge(JSONObject object1, JSONObject object2) throws JSONException {

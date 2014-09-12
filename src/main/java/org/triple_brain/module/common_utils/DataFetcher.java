@@ -1,3 +1,7 @@
+/*
+ * Copyright Vincent Blouin under the Mozilla Public License 1.1
+ */
+
 package org.triple_brain.module.common_utils;
 
 import org.codehaus.jettison.json.JSONException;
@@ -10,9 +14,6 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 
-/*
-* Copyright Mozilla Public License 1.1
-*/
 public class DataFetcher {
 
     private static String getWebSiteSource(URL url) {
